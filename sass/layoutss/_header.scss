@@ -1,0 +1,133 @@
+.header {
+    grid-column: full-start / full-end;
+   // padding: 2.5rem 8.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    letter-spacing: 1.5rem;
+    font-weight: bold;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    transition: all .6s;
+
+    &--red {
+        color: color(primary);
+        transition: all .6s;
+    }
+
+    &:hover {
+        color: color(primary);
+
+        .logo--red {
+            color: color(white);
+        }
+    }
+
+    @include smallest {      
+        margin-left: 2.1rem;
+    }
+
+
+}
+
+.navigation {
+    align-self: stretch;
+
+    display: contents;
+   
+
+    &__items {
+        display: flex;
+        //align-items: center;
+        align-self: stretch;
+    }
+
+    &__item {
+        margin-right: 3rem;
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+        align-self: stretch;
+        
+        display: flex;
+            
+    }
+
+    &__link {
+        color: color(light-grey);
+        transition: all .4s;
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: all .2s;
+
+         &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: .2rem;
+            background-color: color(primary);
+            bottom: 2rem;
+            transform: scale(0);
+            transform-origin: left;
+            transition: all .8s;
+        }
+
+        &:hover::after,
+        &:hover {
+            color: color(primary);
+            transform: scale(1);
+        }
+
+       
+    }  
+
+    @include large {
+        display: none;
+    }
+}
+
+.cta {
+   margin-left: auto;
+   margin-right: 7rem;
+   border: none;
+   background-color: color(primary);
+   padding: 1.5rem 3.5rem;
+   color: color(white);
+   font: inherit;
+   font-size: 1rem;
+   font-weight: bold;
+   letter-spacing: .5rem;
+   border-radius: .5rem;
+   display: flex;
+   align-items: center;
+   position: relative;
+    transition: all .6s;
+
+
+   &::before {
+       content: "";
+       display: inline-block;
+       height: 2rem;
+       width: 2rem;
+       margin-right: 2rem;
+       background-color: color(white);
+       mask-image: url("../../img/chat.svg");
+       mask-size: cover;
+   }
+
+   &:hover {
+       background-color: black;
+   }
+   
+   &:focus {
+       outline: none;
+   }
+
+   @include large {
+    display: none;
+    }
+}

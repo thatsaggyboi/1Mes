@@ -1,0 +1,115 @@
+.port {
+    &__content {
+        grid-column: center-start / col-end 4;
+        padding: 34rem 0 3rem;
+
+        @include largest {
+            padding: 30rem 0 3rem;
+        }
+
+        @include large {
+            padding: 0;
+            align-self: center;
+            margin-top: 5rem;
+        }
+
+        @include small {
+            grid-column: center-start  / center-end;
+            padding: 10rem 0 6rem;
+            text-align: center;
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        color: color(primary);
+        font-weight: 300;
+        position: relative;
+        margin-bottom: 7rem;
+        margin-left: 1.5rem;
+
+        &::before {
+            content: "01";
+            color: color(light-grey);
+            position: absolute;
+            top: -13rem;
+            left: -2rem;
+            font-size: 15rem;
+            font-weight: bold;
+            z-index: -1;
+            opacity: .1;
+
+            @include small {
+                left: 0;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -12rem;
+            }
+        }
+
+        @include small {
+
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__text {
+        font-size: 2.5rem;
+    }
+
+    &__img {
+        grid-column: col-start 5 / center-end;
+        display: grid;
+        padding: 22rem 0 3rem;
+        justify-items: center;
+        position: relative;
+
+        &::before {
+            content: "";
+            display: block;
+            width: 28rem;
+            height: 17.6rem;
+            background-image: url("../../img/dots.svg");
+            opacity: .25;
+            position: absolute;
+            top: 0rem;
+            left: 2rem;
+
+            @include large {
+                display: none;
+            }
+
+
+        }
+
+        @include large {
+            padding: 14rem 0;
+            
+        }
+
+        @include small {
+            grid-row: 4 / 5;
+            grid-column: center-start  / center-end;
+            padding: 0;
+        }
+    }
+
+    &__photo {
+        width: 100%;
+
+        @include largest {
+            width: 52.496rem;
+        }
+
+        @include large {
+            width: 100%;
+        }
+
+        @include small {
+            width: 90%;
+        }
+    }
+
+
+}

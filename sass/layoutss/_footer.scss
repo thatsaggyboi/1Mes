@@ -1,0 +1,164 @@
+.footer {
+    grid-column: full-start / full-end;
+    background-color: color(primary);
+    padding: 5rem 16rem;
+
+    text-align: center;
+
+    &__get-in-touch {
+        color: color(background);
+        font-size: 1.5rem;
+        letter-spacing: 3px;
+        font-weight: 600;
+    }
+
+    &__sub {
+        font-size: 3rem;
+        font-weight: 500;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+
+        @include small {
+            span {
+                display: none;
+            }
+        }
+
+        @include smallest-v2 {
+            font-size: 1.5rem;
+            width: 100%;
+        }
+    }
+
+    &__email {
+        font-size: 5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        transition: all .6s;
+
+        &:hover {
+            color: color(background);
+        }
+
+        @include large {
+            font-size: 3rem; 
+        }
+
+        @include small {
+            margin-bottom: 7rem;
+            text-align: center;
+        }
+
+        @include smallest-v2 {
+            font-size: 2.2rem;
+        }
+    } 
+
+    &__flexbox {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        align-items: flex-start;
+
+        .heading9 {
+            color: color(background);
+            font-size: 2rem;
+            letter-spacing: 3px;
+            font-weight: 600;
+        }
+
+        @include large {
+            justify-content: center;
+        }
+
+    }
+
+    .b {
+        margin-left: -15rem;
+
+        @include large {
+            margin-left: 0;
+        }
+
+        @include small {
+            text-align: center;
+        }
+    }
+
+    &__add {
+        font-size: 2.5rem;
+        width: 70%;
+    }
+
+    .contact {
+        font-size: 3rem;
+    }
+
+    li {
+        font-size: 2.5rem;
+    }
+
+    &__btn {
+        padding: 2rem 8rem;
+        background-color: color(white);
+        color: color(background);
+        border: none;
+        letter-spacing: 6px;
+        border-radius: 1rem;
+        position: relative;
+        transition: all .3s;
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 8rem;
+            height: .1rem;
+            background-color: color(background);
+            top: -4rem;
+            left: 0;
+        }
+
+        &:hover {
+            background-color: black;
+            color: white;
+
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__innerflex {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        column-gap: 2rem;
+
+        @include large {
+           justify-content: center;
+        }
+
+    }
+
+    .z {
+        @include large {
+            display: none;
+        }
+    }
+
+    .q {
+        @include small {
+            display: none;
+        }
+    }
+
+    @include small {
+        padding: 5rem 0;
+    }
+
+
+}
