@@ -22,10 +22,15 @@
 
 <body class="container">
 
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="preloader__counter">0</div>
-    </div> 
+    </div>  -->
 
+    <!-- <a class="floating-btn">
+        <img src="./img/paypal-icon.png" alt="" class="paypal">
+ <span>Liked our work? 
+               Support us.</span>
+    </a> -->
 
     <div class="motab-navigation">
         <input type="checkbox" class="motab-navigation__checkbox" id="navi-toggle">
@@ -38,13 +43,13 @@
 
         <nav class="motab-navigation__nav">
             <ul class="motab-navigation__list">
-                <li class="motab-navigation__item"><a href="#" class="motab-navigation__link">HOME</a></li>
-                <li class="motab-navigation__item"><a href="#" class="motab-navigation__link">PORT</a></li>
-                <li class="motab-navigation__item"><a href="#" class="motab-navigation__link">WHY PORT</a></li>
-                <li class="motab-navigation__item"><a href="#" class="motab-navigation__link">DOWNLOAD</a></li>
-                <li class="motab-navigation__item"><a href="#" class="motab-navigation__link">INSTALL</a></li>
-                <li class="motab-navigation__item"><a href="#" class="motab-navigation__link">PERU TEAM</a></li>
-                <li class="motab-navigation__item"><a href="#" class="motab-navigation__link">PING US</a></li>       
+                <li class="motab-navigation__item"><a href="#home" class="motab-navigation__link">HOME</a></li>
+                <li class="motab-navigation__item"><a href="#port" class="motab-navigation__link">PORT</a></li>
+                <li class="motab-navigation__item"><a href="#why" class="motab-navigation__link">WHY PORT</a></li>
+                <li class="motab-navigation__item"><a href="#download" class="motab-navigation__link">DOWNLOAD</a></li>
+                <li class="motab-navigation__item"><a href="#install" class="motab-navigation__link">INSTALL</a></li>
+                <li class="motab-navigation__item"><a href="#team" class="motab-navigation__link">PRUU TEAM</a></li>
+                <li class="motab-navigation__item"><a href="#getintouch" class="motab-navigation__link">PING US</a></li>       
             </ul>
         </nav>
     </div>
@@ -57,35 +62,36 @@
         </a>
         <nav class="navigation">
             <ul class="navigation__items">
-                <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Port</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Why Port ?</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Download</a></li>
+                <li class="navigation__item"><a href="#home" id="home-active" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#port" id="port-active" class="navigation__link">port</a></li>
+                <li class="navigation__item"><a href="#whyport" id="why-active" class="navigation__link">Why Port ?</a></li>
+                <li class="navigation__item"><a href="#download" id="download-active" class="navigation__link">Download</a></li>
+                <li class="navigation__item"><a href="#team" id="team-active" class="navigation__link">Team</a></li>
 
             </ul>
         </nav>
-        <button class="cta">GET IN TOUCH</button>
+        <a class="cta" href="#getintouch">GET IN TOUCH</a>
     </header>
-    <div class="hero__content anim1">
+    <div class="hero__content anim1" >
         <h1 class="hero__heading mb_sm">Hello.</h1>
-        <p class="hero__sub mb_hg">We are Droid Brickerz. We Love Bricking Devices Lol You can find Your Port Here</p>
+        <p class="hero__sub mb_hg">We are <span style="font-weight: bold;">Droid Brickerz </span><sup>&copy;</sup> We love bricking your devices. LOL You can find your port here.</p>
         <div class="hero__social">
-            <a href="" class="hero__social-link">
-                <i class="fab fa-android hero__social-icon"></i>
+            <a href="#" class="hero__social-link">
+                <i class="fab fa-youtube hero__social-icon"></i>
             </a>
-            <a href="https://github.com/thatsaggyboi" class="hero__social-link">
+            <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="hero__social-link">
                 <i class="fab fa-telegram hero__social-icon"></i>
             </a>
-            <a href="https://github.com/thatsaggyboi" class="hero__social-link">
+            <a href="#" class="hero__social-link">
                 <i class="fab fa-github hero__social-icon"></i>
             </a>
-            <a href="https://github.com/thatsaggyboi" class="hero__social-link">
+            <a href="#" class="hero__social-link">
                 <i class="fab fa-instagram hero__social-icon"></i>
             </a>
         </div>
     </div>
-    <div class="hero__img"></div>
-    <div class="port__content">
+    <div class="hero__img" id="home"></div>
+    <div class="port__content" id="port">
         <h2 class="port__heading" data-aos="fade-up">What is Port</h2>
         <p class="port__text" data-aos="fade-up">Shifting & Modifying other Android based Operating System to your Android Device.</p>
     </div>
@@ -95,17 +101,18 @@
     <div class="difference__illu" data-aos="fade-right" data-aos-offset="650">
         <img src="./img/illu1.png" alt="illu1" class="illu1">
     </div>
-    <div class="difference__content">
+    <div class="difference__content" id="whyport">
         <h2 class="difference__heading" data-aos="fade-up">Difference</h2>
         <div class="center">
             <div class="difference__custom-rom">
                 <h2 class="heading-2 mb_sm" data-aos="fade-right">Custom Rom</h2>
-                <p class="text1 mb_hg" data-aos="fade-right">Features & customization are devloped & implemented by devloper of that custom rom
+                <p class="text1 mb_hg" data-aos="fade-right">Features & customization are developed & implemented by the developer of that custom rom.
                 </p>
             </div>
             <div class="difference__port-rom">
                 <h2 class="heading-2 mb_sm" data-aos="fade-right">Port Rom</h2>
-                <p class="text1 mb_hg" data-aos="fade-right">All features are pure & untouched from rom</p>
+                <p class="text1" data-aos="fade-right">All features are pure & untouched.</p>
+                <p class="text1 mb_hg" data-aos="fade-right">Giving you pure experience of other device Rom.</p>
             </div>
         </div>
 
@@ -118,14 +125,14 @@
 
         <div class="tabs">
             <div class="tab-2">
-                <label for="tab2-1" style="color: white;">MI A2 <span>AKA JASMINE SPROUT</span> </label>
+                <label for="tab2-1" style="color: white;">MI A2 <span>/ JASMINE SPROUT</span> </label>
                 <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
                 <div class="cards">
                     <div class="card">
                         <img src="./img/op7pro.png" alt="op7pro" data-aos="fade-right" data-aos-offset="120" class="card__photo">
                         <div class="card__content">
                             <h3 class="card__heading mb_sm" data-aos="fade-up">OnePlus 7 Pro</h3>
-                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Stable</span></p>
+                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Stable 01</span></p>
                             <p class="card__version mb_sm--2" data-aos="fade-up">Version: <span>OOS 10</span></p>
                             <a href="#popup"><button class="btn" data-aos="fade-up">DOWNLOAD</button></a>
                         </div>
@@ -134,7 +141,7 @@
                         <img src="./img/op7.png" alt="op7" data-aos="fade-right" data-aos-offset="120" class="card__photo">
                         <div class="card__content">
                             <h3 class="card__heading mb_sm" data-aos="fade-up">OnePlus 7</h3>
-                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Stable</span></p>
+                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Stable 01</span></p>
                             <p class="card__version mb_sm--2" data-aos="fade-up">Version: <span>OOS 10</p>
                             <a href="#popup2"><button class="btn" data-aos="fade-up">DOWNLOAD</button></a>
 
@@ -144,51 +151,55 @@
                         <img src="./img/op5.png" alt="op5" data-aos="fade-right" data-aos-offset="120" class="card__photo">
                         <div class="card__content">
                             <h3 class="card__heading mb_sm" data-aos="fade-up">OnePlus 5</h3>
-                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Beta</span></p>
+                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Beta 01</span></p>
                             <p class="card__version mb_sm--2" data-aos="fade-up">Version: <span>OOS 10</p>
-                            <button class="btn" data-aos="fade-up">DOWNLOAD</button>
+                            <a href="#popup3"><button class="btn" data-aos="fade-up">DOWNLOAD</button></a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="tab-2">
-                <label for="tab2-2">MI 6X <span>AKA WAYNE</span></label>
+                <label for="tab2-2">MI 6X <span> / WAYNE</span></label>
                 <input id="tab2-2" name="tabs-two" type="radio">
                 <div class="cards">
                     <div class="card" >
                         <img src="./img/op7pro.png" alt="op7pro" data-aos="fade-right" data-aos-offset="120" class="card__photo">
                         <div class="card__content">
                             <h3 class="card__heading mb_sm" data-aos="fade-up">OnePlus 7</h3>
-                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Stable</span></p>
+                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Stable 01</span></p>
                             <p class="card__version mb_sm--2" data-aos="fade-up">Version: <span>OOS 10</span></p>
-                            <button class="btn" data-aos="fade-up">DOWNLOAD</button>
+                            <a href="#popup11"><button class="btn" data-aos="fade-up">DOWNLOAD</button></a>
                         </div>
                     </div>
                     <div class="card" >
                         <img src="./img/op6.png" alt="op6" data-aos="fade-right" data-aos-offset="120" class="card__photo">
                         <div class="card__content">
                             <h3 class="card__heading mb_sm" data-aos="fade-up">OnePlus 6</h3>
-                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Beta</span></p>
+                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Beta 02</span></p>
                             <p class="card__version mb_sm--2" data-aos="fade-up">Version: <span>OOS 10</p>
-                            <button class="btn" data-aos="fade-up">DOWNLOAD</button>
+                            <a href="#popup12"><button class="btn" data-aos="fade-up">DOWNLOAD</button></a>
                         </div>
                     </div>
                     <div class="card" >
                         <img src="./img/op5.png" alt="op5" data-aos="fade-right" data-aos-offset="120" class="card__photo">
                         <div class="card__content">
                             <h3 class="card__heading mb_sm" data-aos="fade-up">OnePlus 5</h3>
-                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Beta</span></p>
+                            <p class="card__codename mb_sm--2" data-aos="fade-up">Build: <span>Beta 01</span></p>
                             <p class="card__version mb_sm--2" data-aos="fade-up">Version: <span>OOS 10</p>
-                            <button class="btn" data-aos="fade-up">DOWNLOAD</button>
+                            <a href="#popup13"><button class="btn" data-aos="fade-up">DOWNLOAD</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <p class="note" data-aos="fade-up">
+            * WE ARE NOT RESPONSIBLE FOR YOUR BRICKED DEVICE BECAUSE OF YOUR MISTAKES. FOLLOW THE EXACT PROCEDURE AND ENJOY.
+        </p>
+
     </section>
 
 
-    <section class="install">
+    <section class="install" id="install">
         <h2 class="install__heading" data-aos="fade-up">Steps to install</h2>
         <div class="install__steps">
             <div class="install__step" data-aos="fade-up">
@@ -197,7 +208,7 @@
                     <span class="install__step--head2">Download Rom</span>
                 </div>
                 <p class="install__step--des" data-aos="fade-up">
-                    Download the port rom and place rom inside the Internal storage
+                    Download the port rom and place it inside the Internal storage.
                 </p>
             </div>
             <div class="install__step" data-aos="fade-up">
@@ -206,7 +217,7 @@
                     <span class="install__step--head2">Wipe Everything</span>
                 </div>
                 <p class="install__step--des" data-aos="fade-up">
-                    Wipe everything except internal. clean flash recommended but dirty flash also works fine.
+                    Wipe everything on both slots except internal storage.
                 </p>
             </div>
             <div class="install__step" data-aos="fade-up">
@@ -225,60 +236,60 @@
                     <span class="install__step--head2">Enjoy Rom :)</span>
                 </div>
                 <p class="install__step--des" data-aos="fade-up">
-                    First boot will take some time so be patient. Don't report bugs without applying additional fixes.
+                    First boot will take some time so be patient. Enjoy ! ! !
                 </p>
             </div>
         </div>
-        <p class="install__note" data-aos="fade-up">
-            * Above procedure is standard. it may affect differet for other Devices.
+        <p class="install__note" id="team" data-aos="fade-up">
+            * This procedure is standard. It may vary device to device. Do not report any bugs without applying additional fixes. 
         </p>
     </section>
 
     <section class="team">
         <div class="download__head c">
-            <h2 class="team__heading" data-aos="fade-up">Peru Team</h2>
-            <p class="text2" data-aos="fade-up" data-aos-offset="150">So now Meet our exceptionally talented team of Porting World.</p>
+            <h2 class="team__heading" data-aos="fade-up">Pruu Team</h2>
+            <p class="text2" data-aos="fade-up" data-aos-offset="150">So now meet our exceptionally talented team of Porting World.</p>
         </div>
         
         <div class="tabs1">
             <div class="tab-21">
-                <label for="tab2-11" style="color: white;">Core Team</label>
+                <label for="tab2-11" style="color: white;">1MES Team</label>
                 <input id="tab2-11" name="tabs1-two" type="radio" checked="checked">
                 <div class="onemes">
                     <div class="onemes__members">
                         <div class="onemes__member" data-aos="fade-up" data-aos-offset="150">
                             <div class="social-group">
-                                <img src="/img/Icon awesome-twitter.png" alt="" class="social twitter">
+                                <i class="fab fa-telegram hero__social-icon social twitter"></i>
                                 <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
                                 <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
                             </div>
                             <img src="/img/team-1.png" alt="" data-aos="fade-up" data-aos-offset="150" class="onemes__member--photo">
                             <div class="onemes__member--deatils" data-aos="fade-up">
-                                <h4 class="onemes__member--name" data-aos="fade-up">Sagar Ajmeri</h4>
+                                <h4 class="onemes__member--name" data-aos="fade-up">thatsaggyboi</h4>
                                 <p class="onemes__member--quote" data-aos="fade-up">UI Designer & Devloper</p>
                             </div>
                         </div>
                         <div class="onemes__member" data-aos="fade-up" data-aos-offset="150">      
                             <div class="social-group">
-                                <img src="/img/Icon awesome-twitter.png" alt="" class="social twitter">
+                                <i class="fab fa-telegram hero__social-icon social twitter"></i>
                                 <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
                                 <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
                             </div>  
                             <img src="/img/team-2.png" alt="" data-aos="fade-up" data-aos-offset="150" class="onemes__member--photo a">
                             <div class="onemes__member--deatils" data-aos="fade-up">
-                                <h4 class="onemes__member--name" data-aos="fade-up">Paras Dave</h4>
+                                <h4 class="onemes__member--name" data-aos="fade-up">hello_dont_panic</h4>
                                 <p class="onemes__member--quote" data-aos="fade-up">UX Designer & Content Writer</p>
                             </div>
                         </div>
                         <div class="onemes__member" data-aos="fade-up" data-aos-offset="150">  
                             <div class="social-group">
-                                <img src="/img/Icon awesome-twitter.png" alt="" class="social twitter">
+                                <i class="fab fa-telegram hero__social-icon social twitter"></i>
                                 <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
                                 <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
                             </div>         
                             <img src="/img/team-3.png" alt="" data-aos="fade-up" data-aos-offset="150" class="onemes__member--photo a">
                             <div class="onemes__member--deatils" data-aos="fade-up">
-                                <h4 class="onemes__member--name" data-aos="fade-up">Anonymus</h4>
+                                <h4 class="onemes__member--name" data-aos="fade-up">Gumnaam</h4>
                                 <p class="onemes__member--quote" data-aos="fade-up">Backend Devloper</p>
                             </div>
                         </div>
@@ -286,37 +297,37 @@
                 </div>
             </div>
             <div class="tab-21">
-                <label for="tab2-21">Port Devlopers</label>
+                <label for="tab2-21">Droid Brickerz</label>
                 <input id="tab2-21" name="tabs1-two" type="radio">
                 <div class="onemes">
                     <div class="onemes__members">
                         <div class="onemes__member">
                             <div class="social-group">
-                                <img src="/img/Icon awesome-twitter.png" alt="" class="social twitter">
+                                <i class="fab fa-telegram hero__social-icon social twitter"></i>
                                 <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
                                 <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
                             </div>
                             <img src="/img/team-2.png" alt="" class="onemes__member--photo">
                             <div class="onemes__member--deatils">
-                                <h4 class="onemes__member--name">Paras Dave</h4>
-                                <p class="onemes__member--quote">MIA2 & MI6X Devloper</p>
+                                <h4 class="onemes__member--name">hello_dont_panic</h4>
+                                <p class="onemes__member--quote">MIA2 & MI6X OOS Devloper</p>
                             </div>
                         </div>
                         <div class="onemes__member" >      
                             <div class="social-group">
-                                <img src="/img/Icon awesome-twitter.png" alt="" class="social twitter">
+                                <i class="fab fa-telegram hero__social-icon social twitter"></i>
                                 <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
                                 <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
                             </div>  
                             <img src="/img/team-4.png" alt="" class="onemes__member--photo a">
                             <div class="onemes__member--deatils">
                                 <h4 class="onemes__member--name">Fevricio Sc</h4>
-                                <p class="onemes__member--quote">MI6X Devloper</p>
+                                <p class="onemes__member--quote">MI6X OOS Devloper</p>
                             </div>
                         </div>
                         <div class="onemes__member" >  
                             <div class="social-group">
-                                <img src="/img/Icon awesome-twitter.png" alt="" class="social twitter">
+                                <i class="fab fa-telegram hero__social-icon social twitter"></i>
                                 <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
                                 <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
                             </div>         
@@ -334,15 +345,15 @@
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" id="getintouch">
         <p class="footer__get-in-touch mb_sm" data-aos="fade-up">GET IN TOUCH</p>
-        <p class="footer__sub" data-aos="fade-up"><span>Have a port rom or an epic knowledge of Port? Talk to us. Let us work together and make something great.</span>Let us work together. Shoot us a message at</p>
-        <p class="footer__email mb_hg--2" data-aos="fade-up">sagar.ajmeri999@gmail.com</p>
+        <p class="footer__sub" data-aos="fade-up"><span class="desktop">Have your own port rom or epic knowledge of porting? Talk to us. Lets work together and make future great. Shoot us a message at</span><span class="mobile">Want your port featured here? Shoot a message at</span></p>
+        <p class="footer__email mb_hg--2" data-aos="fade-up">droidbrickerz@gmail.com</p>
         <div class="footer__flexbox">
             <div class="footer__flex q">
                 <h2 class="heading9 mb_sm" data-aos="fade-up">WHERE TO FIND US</h2>
-                <p class="footer__add mb_sm" data-aos="fade-up">Somewhere in Vadoadara, india</p>
-                <p class="contact" data-aos="fade-up">+197 543 2345</p>
+                <p class="footer__add mb_sm" data-aos="fade-up">Somewhere on the earth</p>
+                <p class="contact" data-aos="fade-up">Or on Telegram</p>
             </div>
             <div class="footer__flex b">
                 <h2 class="heading9 mb_sm" data-aos="fade-up">FOLLOW US</h2>
@@ -353,10 +364,13 @@
                 </ul>
             </div>
             <div class="footer__flex z">
-                <button class="footer__btn" data-aos="fade-up">LET'S TALK</button>
+                <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank">
+                    <button class="footer__btn" data-aos="fade-up">LET'S TALK</button>
+                </a>
+                
                 <div class="footer__innerflex">
-                    <p class="footer__legacy" data-aos="fade-up">Copyright 1Mes 2020</p>
-                    <p class="footer__design" data-aos="fade-up">Design by Sagar Ajmeri</p>
+                    <p class="footer__legacy" data-aos="fade-up">Copyright &copy; 1Mes 2020</p>
+                    <p class="footer__design" data-aos="fade-up">Design by 1MES Team</p>
                 </div>
             </div>
         </div>
@@ -366,10 +380,10 @@
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__head">
-                <h2 class="popup__heading">OP7 Port for MI A2</h2>
+                <h2 class="popup__heading" onclick="show()" id="download">OP7 Pro Port for MI A2</h2>
                 <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
             </div>
-            <div class="popup__container">
+            <div class="popup__container" id="popup__container">
                 <div class="popup__left">
                     <i class="fa fa-mobile" aria-hidden="true"></i>
                     <p class="popup__left-title">OEM</p>
@@ -377,27 +391,27 @@
                 <div class="popup__right">Xiaomi India</div>
                 <div class="popup__left">
                     <i class="fa fa-code" aria-hidden="true"></i>
-                    <p class="popup__left-title">Codename</p>
+                    <p class="popup__left-title">Device</p>
                 </div>
                 <div class="popup__right">Jasmine Sprout</div>
                 <div class="popup__left">
                     <i class="fa fa-male" aria-hidden="true"></i>
-                    <p class="popup__left-title">Maintainer</p>
+                    <p class="popup__left-title">Developer</p>
                 </div>
-                <div class="popup__right">Paras Dave</div>
+                <div class="popup__right">hello_dont_panic</div>
                 <div class="popup__left">
                     <i class="fa fa-id-card" aria-hidden="true"></i>
-                    <p class="popup__left-title">Nickname</p>
-                </div>
-                <div class="popup__right">Hello_Don't_Panic</div>
-                <div class="popup__left">
-                    <i class="fa fa-android" aria-hidden="true"></i>
-                    <p class="popup__left-title">OOS Version</p>
+                    <p class="popup__left-title">Android version</p>
                 </div>
                 <div class="popup__right">10.0.0</div>
                 <div class="popup__left">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    <p class="popup__left-title">Build date</p>
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <p class="popup__left-title">Security Patch</p>
+                </div>
+                <div class="popup__right">August, 2020</div>
+                <div class="popup__left">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p class="popup__left-title">Release Date</p>
                 </div>
                 <div class="popup__right">2020-08-24</div>
                 <div class="popup__left">
@@ -409,7 +423,44 @@
                     <i class="fa fa-bolt" aria-hidden="true"></i>
                     <p class="popup__left-title ">Build Type</p>
                 </div>
-                <div class="popup__right new">Stable AF</div>
+                <div class="popup__right new">Stable01</div>
+            </div>
+            <div class="popup__changelog" id="popup__changelog">
+                <h2 class="mb_hg" >Changelogs :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li>Initial Stable Build</li>
+                    <label>2)</label>
+                    <li>Fixed camera</li>
+                    <label>3)</label>
+                    <li>Fixed fingerprint Ghost Touch issue</li>
+                    <label>4)</label>
+                    <li>Fixed Bluetooth Audio</li>
+                    <label>5)</label>
+                    <li>Fixed camera for snapchat, whatsapp and other third party apps</li>
+                    <label>6)</label>
+                    <li>Improved performance</li>
+                    <label>7)</label>
+                    <li>Improved face unlock speed</li>
+                    <label>8)</label>
+                    <li>Battery is optimised</li>
+                </ul>
+            </div>
+            <div class="popup__fixes" id="popup__fixes">
+                <h2 class="mb_hg">Fixes :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li> For screen not turning complete off :
+                        <a href="https://imgur.com/FNVJw18" target="_blank">Watch this</a></li>
+                    <label>2)</label>
+                    <li>Hide magisk manager and apply fix from the group</li>
+                    <label>3)</label>
+                    <li>For apps detecting device as rooted:
+                        Hide those apps in Magisk Hide</li>
+                    <label>4)</label>
+                    <li>For USB File Transfer:
+                        Enable USB Debugging and select Default USB configuration as File Transfer in Developers Options</li>
+                </ul>
             </div>
             <div class="popup__download">
                 <h2 class="popup__download-heading">Downloads</h2>
@@ -423,32 +474,28 @@
             <div class="popup__links">
                 <h2 class="popup__links-heading">Useful links</h2>
                 <div class="popup__grid">
-                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link"
-                        style="background-color: yellow; color: black;">Support</a>
-                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link"
-                        style="background-color: black">Changelog</a>
-                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
-                        style="background-color: skyblue; color:black">ScreenShots</a>
-                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link"
-                        style="background-color: red;">Fixes</a>
                     <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
                         class="popup__link" style="background-color: green;">Donate</a>
-                    <a href="https://sourceforge.net/projects/op7pro-oos10-mi-a2/files/stats/map" target="_blank"
-                        class="popup__link" style="background-color: grey;">Stats</a>
+                    <a  class="popup__link popup__link--rotate"
+                        style="background-color: black" id="Changelog" onclick="hide()">Changelog</a>
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
+                        style="background-color: skyblue; color:black">ScreenShots</a>
+                  
+                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link popup__link--join"
+                        style="background-color: yellow; color: black;">Join us</a>
+                    
                 </div>
             </div>
         </div>
     </div>
 
-
-
     <div class="popup" id="popup2">
         <div class="popup__content">
             <div class="popup__head">
-                <h2 class="popup__heading">OP7 for MI A2</h2>
+                <h2 class="popup__heading" onclick="show()" id="download">OP7 Port for MI A2</h2>
                 <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
             </div>
-            <div class="popup__container">
+            <div class="popup__container" id="popup__container">
                 <div class="popup__left">
                     <i class="fa fa-mobile" aria-hidden="true"></i>
                     <p class="popup__left-title">OEM</p>
@@ -456,27 +503,27 @@
                 <div class="popup__right">Xiaomi India</div>
                 <div class="popup__left">
                     <i class="fa fa-code" aria-hidden="true"></i>
-                    <p class="popup__left-title">Codename</p>
+                    <p class="popup__left-title">Device</p>
                 </div>
                 <div class="popup__right">Jasmine Sprout</div>
                 <div class="popup__left">
                     <i class="fa fa-male" aria-hidden="true"></i>
-                    <p class="popup__left-title">Maintainer</p>
+                    <p class="popup__left-title">Developer</p>
                 </div>
-                <div class="popup__right">Paras Dave</div>
+                <div class="popup__right">hello_dont_panic</div>
                 <div class="popup__left">
                     <i class="fa fa-id-card" aria-hidden="true"></i>
-                    <p class="popup__left-title">Nickname</p>
-                </div>
-                <div class="popup__right">Hello_Don't_Panic</div>
-                <div class="popup__left">
-                    <i class="fa fa-android" aria-hidden="true"></i>
-                    <p class="popup__left-title">OOS Version</p>
+                    <p class="popup__left-title">Android version</p>
                 </div>
                 <div class="popup__right">10.0.0</div>
                 <div class="popup__left">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                    <p class="popup__left-title">Build date</p>
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <p class="popup__left-title">Security Patch</p>
+                </div>
+                <div class="popup__right">July, 2020</div>
+                <div class="popup__left">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p class="popup__left-title">Release Date</p>
                 </div>
                 <div class="popup__right">2020-06-30</div>
                 <div class="popup__left">
@@ -488,37 +535,520 @@
                     <i class="fa fa-bolt" aria-hidden="true"></i>
                     <p class="popup__left-title ">Build Type</p>
                 </div>
-                <div class="popup__right">Stable</div>
+                <div class="popup__right">Stable01</div>
+            </div>
+            <div class="popup__changelog" id="popup__changelog">
+                <h2 class="mb_hg" >Changelogs :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li>Initial Stable Build</li>
+                    <label>2)</label>
+                    <li>Fixed camera</li>
+                    <label>3)</label>
+                    <li>Fixed fingerprint Ghost Touch issue</li>
+                    <label>4)</label>
+                    <li>Fixed Bluetooth Audio</li>
+                    <label>5)</label>
+                    <li>Fixed camera for snapchat, whatsapp and other third party apps</li>
+                    <label>6)</label>
+                    <li>Improved performance</li>
+                    <label>7)</label>
+                    <li>Improved face unlock speed</li>
+                    <label>8)</label>
+                    <li>Battery is optimised</li>
+                </ul>
+            </div>
+            <div class="popup__fixes" id="popup__fixes">
+                <h2 class="mb_hg">Fixes :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li> For screen not turning complete off :
+                        <a href="https://imgur.com/FNVJw18" target="_blank">Watch this</a></li>
+                    <label>2)</label>
+                    <li>Hide magisk manager and apply fix from the group</li>
+                    <label>3)</label>
+                    <li>For apps detecting device as rooted:
+                        Hide those apps in Magisk Hide</li>
+                    <label>4)</label>
+                    <li>For USB File Transfer:
+                        Enable USB Debugging and select Default USB configuration as File Transfer in Developers Options</li>
+                </ul>
             </div>
             <div class="popup__download">
                 <h2 class="popup__download-heading">Downloads</h2>
                 <div class="popup__flex">
-                    <a href="https://sourceforge.net/projects/op7-oos10-mi-a2/files/OP7_Port/OP7_OOS10_JASMINE_SPROUT_20063005.zip/download"
-                        target="_blank" class="popup__d popup__d--new">Download latest Version</a>
-                    <a href="https://sourceforge.net/projects/mi-a2-oxygen-os/" target="_blank"
-                        class="popup__d popup__d--old">Download Older Version</a>
+                    <a href="https://sourceforge.net/projects/op7-oos10-mi-a2/files/OP7_Port/OP7_OOS10_JASMINE_SPROUT_20063005.zip/download" target="_blank" class="popup__d popup__d--new">Download
+                        latest Version</a>
+                    <a href="https://sourceforge.net/projects/mi-a2-oxygen-os/files/OP5_Port/"
+                        target="_blank" class="popup__d popup__d--old">Download Older Version</a>
                 </div>
             </div>
             <div class="popup__links">
                 <h2 class="popup__links-heading">Useful links</h2>
                 <div class="popup__grid">
-                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link"
-                        style="background-color: yellow; color: black;">Support</a>
-                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link"
-                        style="background-color: black">Changelog</a>
-                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
-                        style="background-color: skyblue; color:black">ScreenShots</a>
-                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link"
-                        style="background-color: red;">Fixes</a>
                     <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
                         class="popup__link" style="background-color: green;">Donate</a>
-                    <a href="https://sourceforge.net/projects/op7pro-oos10-mi-a2/files/stats/map" target="_blank"
-                        class="popup__link" style="background-color: grey;">Stats</a>
+                    <a  class="popup__link popup__link--rotate"
+                        style="background-color: black" id="Changelog" onclick="hide()">Changelog</a>
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
+                        style="background-color: skyblue; color:black">ScreenShots</a>
+                  
+                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link popup__link--join"
+                        style="background-color: yellow; color: black;">Join us</a>
+                    
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="popup" id="popup3">
+        <div class="popup__content">
+            <div class="popup__head">
+                <h2 class="popup__heading" onclick="show()" id="download">OP5 Port for MI A2</h2>
+                <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <div class="popup__container" id="popup__container">
+                <div class="popup__left">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p class="popup__left-title">OEM</p>
+                </div>
+                <div class="popup__right">Xiaomi India</div>
+                <div class="popup__left">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <p class="popup__left-title">Device</p>
+                </div>
+                <div class="popup__right">Jasmine Sprout</div>
+                <div class="popup__left">
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <p class="popup__left-title">Developer</p>
+                </div>
+                <div class="popup__right">hello_dont_panic</div>
+                <div class="popup__left">
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    <p class="popup__left-title">Android version</p>
+                </div>
+                <div class="popup__right">10.0.0</div>
+                <div class="popup__left">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <p class="popup__left-title">Security Patch</p>
+                </div>
+                <div class="popup__right">june, 2020</div>
+                <div class="popup__left">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p class="popup__left-title">Release Date</p>
+                </div>
+                <div class="popup__right">2020-06-02</div>
+                <div class="popup__left">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    <p class="popup__left-title">Zip size</p>
+                </div>
+                <div class="popup__right">1.8 GB</div>
+                <div class="popup__left">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    <p class="popup__left-title ">Build Type</p>
+                </div>
+                <div class="popup__right">Stable01</div>
+            </div>
+            <div class="popup__changelog" id="popup__changelog">
+                <h2 class="mb_hg" >Changelogs :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li>Initial Stable Build</li>
+                    <label>2)</label>
+                    <li>Fixed camera</li>
+                    <label>3)</label>
+                    <li>Fixed fingerprint Ghost Touch issue</li>
+                    <label>4)</label>
+                    <li>Fixed Bluetooth Audio</li>
+                    <label>5)</label>
+                    <li>Fixed camera for snapchat, whatsapp and other third party apps</li>
+                    <label>6)</label>
+                    <li>Improved performance</li>
+                    <label>7)</label>
+                    <li>Improved face unlock speed</li>
+                    <label>8)</label>
+                    <li>Battery is optimised</li>
+                </ul>
+            </div>
+            <div class="popup__fixes" id="popup__fixes">
+                <h2 class="mb_hg">Fixes :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li> For screen not turning complete off :
+                        <a href="https://imgur.com/FNVJw18" target="_blank">Watch this</a></li>
+                    <label>2)</label>
+                    <li>Hide magisk manager and apply fix from the group</li>
+                    <label>3)</label>
+                    <li>For apps detecting device as rooted:
+                        Hide those apps in Magisk Hide</li>
+                    <label>4)</label>
+                    <li>For USB File Transfer:
+                        Enable USB Debugging and select Default USB configuration as File Transfer in Developers Options</li>
+                </ul>
+            </div>
+            <div class="popup__download">
+                <h2 class="popup__download-heading">Downloads</h2>
+                <div class="popup__flex">
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__d popup__d--new">Download
+                        latest Version</a>
+                    <a href="https://sourceforge.net/projects/op7-oos10-mi-a2/files/OP7_Port/OP7_OOS10_JASMINE_SPROUT_20063005.zip/download"
+                        target="_blank" class="popup__d popup__d--old">Download Older Version</a>
+                </div>
+            </div>
+            <div class="popup__links">
+                <h2 class="popup__links-heading">Useful links</h2>
+                <div class="popup__grid">
+                    <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
+                        class="popup__link" style="background-color: green;">Donate</a>
+                    <a  class="popup__link popup__link--rotate"
+                        style="background-color: black" id="Changelog" onclick="hide()">Changelog</a>
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
+                        style="background-color: skyblue; color:black">ScreenShots</a>
+                  
+                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link popup__link--join"
+                        style="background-color: yellow; color: black;">Join us</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup11">
+        <div class="popup__content">
+            <div class="popup__head">
+                <h2 class="popup__heading" onclick="show()" id="download">OP7 Port for MI A2</h2>
+                <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <div class="popup__container" id="popup__container">
+                <div class="popup__left">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p class="popup__left-title">OEM</p>
+                </div>
+                <div class="popup__right">Xiaomi India</div>
+                <div class="popup__left">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <p class="popup__left-title">Device</p>
+                </div>
+                <div class="popup__right">Jasmine Sprout</div>
+                <div class="popup__left">
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <p class="popup__left-title">Developer</p>
+                </div>
+                <div class="popup__right">hello_dont_panic</div>
+                <div class="popup__left">
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    <p class="popup__left-title">Android version</p>
+                </div>
+                <div class="popup__right">10.0.0</div>
+                <div class="popup__left">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <p class="popup__left-title">Security Patch</p>
+                </div>
+                <div class="popup__right">August, 2020</div>
+                <div class="popup__left">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p class="popup__left-title">Release Date</p>
+                </div>
+                <div class="popup__right">2020-08-24</div>
+                <div class="popup__left">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    <p class="popup__left-title">Zip size</p>
+                </div>
+                <div class="popup__right">1.57 GB</div>
+                <div class="popup__left">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    <p class="popup__left-title ">Build Type</p>
+                </div>
+                <div class="popup__right new">Stable01</div>
+            </div>
+            <div class="popup__changelog" id="popup__changelog">
+                <h2 class="mb_hg" >Changelogs :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li>Initial Stable Build</li>
+                    <label>2)</label>
+                    <li>Fixed camera</li>
+                    <label>3)</label>
+                    <li>Fixed fingerprint Ghost Touch issue</li>
+                    <label>4)</label>
+                    <li>Fixed Bluetooth Audio</li>
+                    <label>5)</label>
+                    <li>Fixed camera for snapchat, whatsapp and other third party apps</li>
+                    <label>6)</label>
+                    <li>Improved performance</li>
+                    <label>7)</label>
+                    <li>Improved face unlock speed</li>
+                    <label>8)</label>
+                    <li>Battery is optimised</li>
+                </ul>
+            </div>
+            <div class="popup__fixes" id="popup__fixes">
+                <h2 class="mb_hg">Fixes :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li> For screen not turning complete off :
+                        <a href="https://imgur.com/FNVJw18" target="_blank">Watch this</a></li>
+                    <label>2)</label>
+                    <li>Hide magisk manager and apply fix from the group</li>
+                    <label>3)</label>
+                    <li>For apps detecting device as rooted:
+                        Hide those apps in Magisk Hide</li>
+                    <label>4)</label>
+                    <li>For USB File Transfer:
+                        Enable USB Debugging and select Default USB configuration as File Transfer in Developers Options</li>
+                </ul>
+            </div>
+            <div class="popup__download">
+                <h2 class="popup__download-heading">Downloads</h2>
+                <div class="popup__flex">
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__d popup__d--new">Download
+                        latest Version</a>
+                    <a href="https://sourceforge.net/projects/op7-oos10-mi-a2/files/OP7_Port/OP7_OOS10_JASMINE_SPROUT_20063005.zip/download"
+                        target="_blank" class="popup__d popup__d--old">Download Older Version</a>
+                </div>
+            </div>
+            <div class="popup__links">
+                <h2 class="popup__links-heading">Useful links</h2>
+                <div class="popup__grid">
+                    <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
+                        class="popup__link" style="background-color: green;">Donate</a>
+                    <a  class="popup__link popup__link--rotate"
+                        style="background-color: black" id="Changelog" onclick="hide()">Changelog</a>
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
+                        style="background-color: skyblue; color:black">ScreenShots</a>
+                  
+                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link popup__link--join"
+                        style="background-color: yellow; color: black;">Join us</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup12">
+        <div class="popup__content">
+            <div class="popup__head">
+                <h2 class="popup__heading" onclick="show()" id="download">OP7 Port for MI A2</h2>
+                <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <div class="popup__container" id="popup__container">
+                <div class="popup__left">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p class="popup__left-title">OEM</p>
+                </div>
+                <div class="popup__right">Xiaomi India</div>
+                <div class="popup__left">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <p class="popup__left-title">Device</p>
+                </div>
+                <div class="popup__right">Jasmine Sprout</div>
+                <div class="popup__left">
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <p class="popup__left-title">Developer</p>
+                </div>
+                <div class="popup__right">hello_dont_panic</div>
+                <div class="popup__left">
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    <p class="popup__left-title">Android version</p>
+                </div>
+                <div class="popup__right">10.0.0</div>
+                <div class="popup__left">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <p class="popup__left-title">Security Patch</p>
+                </div>
+                <div class="popup__right">August, 2020</div>
+                <div class="popup__left">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p class="popup__left-title">Release Date</p>
+                </div>
+                <div class="popup__right">2020-08-24</div>
+                <div class="popup__left">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    <p class="popup__left-title">Zip size</p>
+                </div>
+                <div class="popup__right">1.57 GB</div>
+                <div class="popup__left">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    <p class="popup__left-title ">Build Type</p>
+                </div>
+                <div class="popup__right new">Stable01</div>
+            </div>
+            <div class="popup__changelog" id="popup__changelog">
+                <h2 class="mb_hg" >Changelogs :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li>Initial Stable Build</li>
+                    <label>2)</label>
+                    <li>Fixed camera</li>
+                    <label>3)</label>
+                    <li>Fixed fingerprint Ghost Touch issue</li>
+                    <label>4)</label>
+                    <li>Fixed Bluetooth Audio</li>
+                    <label>5)</label>
+                    <li>Fixed camera for snapchat, whatsapp and other third party apps</li>
+                    <label>6)</label>
+                    <li>Improved performance</li>
+                    <label>7)</label>
+                    <li>Improved face unlock speed</li>
+                    <label>8)</label>
+                    <li>Battery is optimised</li>
+                </ul>
+            </div>
+            <div class="popup__fixes" id="popup__fixes">
+                <h2 class="mb_hg">Fixes :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li> For screen not turning complete off :
+                        <a href="https://imgur.com/FNVJw18" target="_blank">Watch this</a></li>
+                    <label>2)</label>
+                    <li>Hide magisk manager and apply fix from the group</li>
+                    <label>3)</label>
+                    <li>For apps detecting device as rooted:
+                        Hide those apps in Magisk Hide</li>
+                    <label>4)</label>
+                    <li>For USB File Transfer:
+                        Enable USB Debugging and select Default USB configuration as File Transfer in Developers Options</li>
+                </ul>
+            </div>
+            <div class="popup__download">
+                <h2 class="popup__download-heading">Downloads</h2>
+                <div class="popup__flex">
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__d popup__d--new">Download
+                        latest Version</a>
+                    <a href="https://sourceforge.net/projects/op7-oos10-mi-a2/files/OP7_Port/OP7_OOS10_JASMINE_SPROUT_20063005.zip/download"
+                        target="_blank" class="popup__d popup__d--old">Download Older Version</a>
+                </div>
+            </div>
+            <div class="popup__links">
+                <h2 class="popup__links-heading">Useful links</h2>
+                <div class="popup__grid">
+                    <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
+                        class="popup__link" style="background-color: green;">Donate</a>
+                    <a  class="popup__link popup__link--rotate"
+                        style="background-color: black" id="Changelog" onclick="hide()">Changelog</a>
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
+                        style="background-color: skyblue; color:black">ScreenShots</a>
+                  
+                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link popup__link--join"
+                        style="background-color: yellow; color: black;">Join us</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup13">
+        <div class="popup__content">
+            <div class="popup__head">
+                <h2 class="popup__heading" onclick="show()" id="download">OP5 Port for MI 6</h2>
+                <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <div class="popup__container" id="popup__container">
+                <div class="popup__left">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p class="popup__left-title">OEM</p>
+                </div>
+                <div class="popup__right">Xiaomi India</div>
+                <div class="popup__left">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <p class="popup__left-title">Device</p>
+                </div>
+                <div class="popup__right">Jasmine Sprout</div>
+                <div class="popup__left">
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <p class="popup__left-title">Developer</p>
+                </div>
+                <div class="popup__right">hello_dont_panic</div>
+                <div class="popup__left">
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    <p class="popup__left-title">Android version</p>
+                </div>
+                <div class="popup__right">10.0.0</div>
+                <div class="popup__left">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <p class="popup__left-title">Security Patch</p>
+                </div>
+                <div class="popup__right">june, 2020</div>
+                <div class="popup__left">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p class="popup__left-title">Release Date</p>
+                </div>
+                <div class="popup__right">2020-06-02</div>
+                <div class="popup__left">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    <p class="popup__left-title">Zip size</p>
+                </div>
+                <div class="popup__right">1.8 GB</div>
+                <div class="popup__left">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    <p class="popup__left-title ">Build Type</p>
+                </div>
+                <div class="popup__right">Stable01</div>
+            </div>
+            <div class="popup__changelog" id="popup__changelog">
+                <h2 class="mb_hg" >Changelogs :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li>Initial Stable Build</li>
+                    <label>2)</label>
+                    <li>Fixed camera</li>
+                    <label>3)</label>
+                    <li>Fixed fingerprint Ghost Touch issue</li>
+                    <label>4)</label>
+                    <li>Fixed Bluetooth Audio</li>
+                    <label>5)</label>
+                    <li>Fixed camera for snapchat, whatsapp and other third party apps</li>
+                    <label>6)</label>
+                    <li>Improved performance</li>
+                    <label>7)</label>
+                    <li>Improved face unlock speed</li>
+                    <label>8)</label>
+                    <li>Battery is optimised</li>
+                </ul>
+            </div>
+            <div class="popup__fixes" id="popup__fixes">
+                <h2 class="mb_hg">Fixes :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li> For screen not turning complete off :
+                        <a href="https://imgur.com/FNVJw18" target="_blank">Watch this</a></li>
+                    <label>2)</label>
+                    <li>Hide magisk manager and apply fix from the group</li>
+                    <label>3)</label>
+                    <li>For apps detecting device as rooted:
+                        Hide those apps in Magisk Hide</li>
+                    <label>4)</label>
+                    <li>For USB File Transfer:
+                        Enable USB Debugging and select Default USB configuration as File Transfer in Developers Options</li>
+                </ul>
+            </div>
+            <div class="popup__download">
+                <h2 class="popup__download-heading">Downloads</h2>
+                <div class="popup__flex">
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__d popup__d--new">Download
+                        latest Version</a>
+                    <a href="https://sourceforge.net/projects/op7-oos10-mi-a2/files/OP7_Port/OP7_OOS10_JASMINE_SPROUT_20063005.zip/download"
+                        target="_blank" class="popup__d popup__d--old">Download Older Version</a>
+                </div>
+            </div>
+            <div class="popup__links">
+                <h2 class="popup__links-heading">Useful links</h2>
+                <div class="popup__grid">
+                    <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
+                        class="popup__link" style="background-color: green;">Donate</a>
+                    <a  class="popup__link popup__link--rotate"
+                        style="background-color: black" id="Changelog" onclick="hide()">Changelog</a>
+                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
+                        style="background-color: skyblue; color:black">ScreenShots</a>
+                  
+                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link popup__link--join"
+                        style="background-color: yellow; color: black;">Join us</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
 
     <script>
@@ -553,6 +1083,79 @@
             },.1)
         }
         counter()
+    </script>
+
+    <script>
+        let x = document.getElementById("popup__container");
+        let y = document.getElementById("Changelog");
+        let p = document.getElementById("Fixes");
+        let z = document.getElementById("popup__changelog");
+        let w = document.getElementById("popup__fixes");
+        let a = document.getElementById("download")
+
+        function show() {
+            x.style.transform = "scale(1)";
+            w.style.transform = "scale(0)";
+            w.style.transform = "translateZ(-1000%)";
+            z.style.transform = "scale(0)";
+            z.style.transform = "translateZ(-1000%)";
+        }
+
+        function hide() {           
+            x.style.transform = "scale(0)";
+            x.style.transform = "translateZ(-1000%)";
+            w.style.transform = "scale(0)";
+            w.style.transform = "translateZ(-1000%)";
+            z.style.transform = "scale(1)";
+        }
+
+        function hide1() {           
+            x.style.transform = "scale(0)";
+            x.style.transform = "translateZ(-1000%)";
+            w.style.transform = "scale(1)";
+            z.style.transform = "scale(0)";
+            z.style.transform = "translateZ(-1000%)";
+        }
+
+    </script>
+
+
+    <script>
+        const header = document.querySelector(".header");
+        const sectionOne = document.querySelector(".hero__content");
+
+        const sectionOneOptions = {
+            rootMargin: "-200px 0px 0px 0px"
+        };
+
+        const sectionOneObserver = new IntersectionObserver(function(
+        entries,
+        sectionOneObserver
+        ) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    header.classList.add("nav-scrolled");
+                    header.classList.add("hide");
+                } else {
+                    header.classList.remove("nav-scrolled");  
+                    header.classList.remove("hide");
+                }
+        });
+    },
+    sectionOneOptions);
+
+    sectionOneObserver.observe(sectionOne);
+    </script>
+
+    <script>
+        let aa = document.querySelector("#navi-toggle");
+        let bb = document.querySelector(".motab-navigation__nav");
+
+        bb.addEventListener("click",function() {
+            if(aa.checked) {
+                aa.checked = false;
+            }
+        })
     </script>
 
 </body>
