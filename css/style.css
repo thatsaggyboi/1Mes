@@ -41,7 +41,7 @@ ul {
 
 .container {
   display: grid;
-  grid-template-rows: 9rem 87vh min-content min-content min-content min-content min-content min-content min-content min-content;
+  grid-template-rows: 9rem 87vh min-content min-content min-content min-content min-content 100vh min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   @media (max-width: 876px) {
     .container {
@@ -103,8 +103,8 @@ ul {
   transition: all 1s; }
 
 .logo {
-  font-size: 2.5rem;
-  letter-spacing: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
   font-weight: bold;
   margin-left: 7rem;
   margin-right: 7rem;
@@ -1134,6 +1134,23 @@ ul {
 
 .tabs1 .tab-21:last-child [type="radio"]:checked + div {
   margin-left: -100%; }
+
+.advertisement {
+  grid-column: full-start / full-end;
+  position: relative; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  z-index: -99; }
+  .bg-video__content {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; }
 
 .footer {
   grid-column: full-start / full-end;
