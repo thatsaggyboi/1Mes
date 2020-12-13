@@ -25,6 +25,8 @@
     "https://d-b-company.com/wp-content/uploads/2020/06/db-logo.png" 
         type = "image/x-icon"> 
 
+   
+
     
 
     <!-- mobile specific metas
@@ -51,12 +53,23 @@
 </head>
 
 <body class="container">
+
+    
     
 
      <!-- PRELOADER
     ================================================== -->
     <div class="preloader">
-        <div class="preloader__counter">50</div>
+        
+        <div class="wrapper">
+            <div class="triangle-wrap">
+                <div class="triangle triangle--main"></div>
+                <div class="triangle triangle--red"></div>
+                <div class="triangle triangle--blue"></div>
+              <div class="triangle__text">Loading</div>
+              <div class="preloader__counter">0</div>
+            </div>
+          </div>
     </div>  
 
     <!-- FLOATING BUTTON
@@ -83,7 +96,7 @@
                 <li class="motab-navigation__item"><a href="#home" class="motab-navigation__link">HOME</a></li>
                 <li class="motab-navigation__item"><a href="#port" class="motab-navigation__link">PORT</a></li>
                 <li class="motab-navigation__item"><a href="#whyport" class="motab-navigation__link">WHY PORT</a></li>
-                <li class="motab-navigation__item"><a href="#download" class="motab-navigation__link">DOWNLOAD</a></li>
+                <li class="motab-navigation__item"><a href="#download" class="motab-navigation__link p" data-text="DOWNLOAD">DOWNLOAD</a></li>
                 <li class="motab-navigation__item"><a href="#install" class="motab-navigation__link">INSTALL</a></li>
                 <li class="motab-navigation__item"><a href="#team" class="motab-navigation__link">PRUU TEAM</a></li>
                 <li class="motab-navigation__item"><a href="#getintouch" class="motab-navigation__link">PING US</a></li>       
@@ -94,7 +107,7 @@
     <!-- HEADER SECTION (INCL. LOGO, DESKTOP NAVIGATION, CALL TO ACTION BUTTON)
     ================================================== -->
     <header class="header">
-        <a href="./index.html" class="logo">
+        <a href="./index.html" class="logo glitch" data-text="Droid Brickerz">
             <span class="logo--red">Droid </span>Brickerz
         </a>
         <nav class="navigation">
@@ -104,17 +117,18 @@
                 <li class="navigation__item"><a href="#whyport" id="why-active" class="navigation__link">Why Port ?</a></li>
                 <li class="navigation__item"><a href="#download" id="download-active" class="navigation__link">Download</a></li>
                 <li class="navigation__item"><a href="#team" id="team-active" class="navigation__link">Team</a></li>
-
             </ul>
         </nav>
         <a class="cta" href="#getintouch">GET IN TOUCH</a>
     </header>
 
+
+
     <!-- HERO SECTION
     ================================================== -->
     <div class="hero__content" >
-        <h1 class="hero__heading mb_sm anim1">Hello.</h1>
-        <p class="hero__sub mb_hg anim1">We are <span style="font-weight: bold;">Droid Brickerz </span><sup>&copy;</sup> We love bricking your devices. LOL You can find your port here.</p>
+        <h1 class="hero__heading mb_sm anim1 glitch" data-text="Hello.">Hello.</h1>
+        <p class="hero__sub mb_hg anim1">We are <span style="font-weight: bold;" class="glitch" data-text="Droid Brickerz">Droid Brickerz </span><sup>&copy;</sup> We love bricking your devices. LOL You can find your port here.</p>
         <div class="hero__social anim1">
             <a href="#" class="hero__social-link rellax">
                 <i class="fab fa-youtube hero__social-icon"></i>
@@ -137,7 +151,7 @@
     ================================================== -->
     <div class="port__content" id="port">
         <h2 class="port__heading">What is Port</h2>
-        <p class="port__text">Shifting & Modifying other Android based Operating System to your Android Device.</p>
+        <p class="port__text">Shifting & Modifying other <span class="glitch" data-text="Android based">Android based</span> Operating System to your Android Device.</p>
     </div>
     <div class="port__img">
         <img src="./img/port.png" alt="port img" class="port__photo">
@@ -151,12 +165,12 @@
         <div class="center">
             <div class="difference__custom-rom rom">
                 <h2 class="heading-2 mb_sm">Custom Rom</h2>
-                <p class="text1 mb_hg">Features & customization are developed & implemented by the developer of that custom rom.
+                <p class="text1 mb_hg"><span class="glitch" data-text="Features & customization">Features & customization</span> are developed & implemented by the developer of that custom rom.
                 </p>
             </div>
             <div class="difference__port-rom rom">
                 <h2 class="heading-2 mb_sm">Port Rom</h2>
-                <p class="text1">All features are pure & untouched.</p>
+                <p class="text1">All features are <span class="glitch" data-text="pure & untouched.">pure & untouched.</span></p>
                 <p class="text1 mb_hg">Giving you pure experience of other device Rom.</p>
             </div>
         </div>
@@ -168,7 +182,7 @@
     <section class="download" id="download">
         <div class="download__head" >
             <h2 class="download__heading">Download</h2>
-            <p class="text2 download__subtitle">Here are some of our ports we done lately. Feel free to check them out.</p>
+            <p class="text2 download__subtitle">Here are some of our <span class="glitch" data-text="ports">ports</span> we done lately. Feel free to check them out.</p>
         </div>
 
         <div class="tabs">
@@ -177,13 +191,26 @@
                 <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
                 <div class="cards">
                     <div class="card">
+                        <img src="./img/cp-8t.png" alt="op7pro" class="card__photo">
+                        <div class="card__content">
+                           
+                            <p class="small-text glitch" data-text="Cyberpunk Edition" style="font-family: cyberpunk; color: #f9f500; margin-bottom: 4px; font-size: 8px;">Cyberpunk Edition</p>
+                            <h3 class="card__heading mb_sm glitch" data-text="OnePlus 7 Pro">OnePlus 7 Pro</h3>
+                            <p class="card__codename mb_sm--2">Build: <span>EOL Stable</span></p>
+                            <p class="card__version mb_sm--2">Version: <span>OOS 10</span></p>
+                            <a ><button class="btn" data-text="Download" style="cursor: not-allowed;">Soon</button></a>
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="card">
                         <img src="./img/OnePlus-7T-Pro-McLaren-Nepal.png" alt="op7pro" class="card__photo">
                         <div class="card__content">
                             <p class="small-text">McLaren Edition</p>
                             <h3 class="card__heading mb_sm">OnePlus 7 Pro</h3>
                             <p class="card__codename mb_sm--2">Build: <span>EOL Stable</span></p>
                             <p class="card__version mb_sm--2">Version: <span>OOS 10</span></p>
-                            <a href="#popup"><button class="btn">Download</button></a>
+                            <a href="#popup2"><button class="btn testing" data-text="Download">Download</button></a>
                         </div>
                     </div>
                     <div class="card" >
@@ -192,24 +219,8 @@
                             <h3 class="card__heading mb_sm">OnePlus 7 Pro</h3>
                             <p class="card__codename mb_sm--2">Build: <span>Stable 01</span></p>
                             <p class="card__version mb_sm--2">Version: <span>OOS 10</span></p>
-                            <a href="#popup2"><button class="btn">DOWNLOAD</button></a>
+                            <a href="#popup3"><button class="btn testing" data-text="Download">DOWNLOAD</button></a>
                         </div>
-                    </div>
-                    <div class="card" >
-                        <img src="./img/op7.png" alt="op7" class="card__photo">
-                        <div class="card__content">
-                            <h3 class="card__heading mb_sm">OnePlus 7</h3>
-                            <p class="card__codename mb_sm--2">Build: <span>Stable 01</span></p>
-                            <p class="card__version mb_sm--2">Version: <span>OOS 10</p>
-                            <a href="#popup3"><button class="btn">DOWNLOAD</button></a>
-                        </div>
-                        <!-- <img src="./img/op5.png" alt="op5" class="card__photo">
-                        <div class="card__content">
-                            <h3 class="card__heading mb_sm">OnePlus 5</h3>
-                            <p class="card__codename mb_sm--2">Build: <span>Beta 01</span></p>
-                            <p class="card__version mb_sm--2">Version: <span>OOS 10</p>
-                            <a href="#popup3"><button class="btn">DOWNLOAD</button></a>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -255,19 +266,21 @@
 
     </section>
 
+  
+
      <!-- COMING SOON SECTION
     ================================================== -->
 
     <section class="com-soon">
-        <h1>COMING SOON</h1>
+        <h1 class="glitch" data-text="COMING SOON">COMING SOON</h1>
         <img src="./img/c1.jpg" alt="">
        
         <div id="countdown" class="countdown">
             <ul>
-              <li><span id="days"></span>days</li>
-              <li><span id="hours"></span>Hours</li>
-              <li><span id="minutes"></span>Minutes</li>
-              <li><span id="seconds"></span>Seconds</li>
+              <li class="glitch"><span id="days"></span><span class="glitch" data-text="days">days</span></li>
+              <li class="glitch"><span id="hours"></span><span class="glitch" data-text="hours">hours</span></li>
+              <li class="glitch"><span id="minutes"></span><span class="glitch" data-text="minutes">minutes</span></li>
+              <li class="glitch"><span id="seconds"></span><span class="glitch" data-text="seconds">seconds</span></li>
             </ul>
           </div>
     </section>
@@ -279,7 +292,7 @@
         <div class="install__steps">
             <div class="install__step">
                 <div class="install__step--head">
-                    <span class="install__step--head1" style="color: red;">1</span>
+                    <span class="install__step--head1 glitch" data-text="1" style="color: #f9f500;">1</span>
                     <span class="install__step--head2">Download Rom</span>
                 </div>
                 <p class="install__step--des">
@@ -288,7 +301,7 @@
             </div>
             <div class="install__step">
                 <div class="install__step--head">
-                    <span class="install__step--head1" style="color: red;">2</span>
+                    <span class="install__step--head1 glitch" data-text="2" style="color: #f9f500;">2</span>
                     <span class="install__step--head2">Wipe Everything</span>
                 </div>
                 <p class="install__step--des">
@@ -297,7 +310,7 @@
             </div>
             <div class="install__step">
                 <div class="install__step--head">
-                    <span class="install__step--head1" style="color: red;">3</span>
+                    <span class="install__step--head1 glitch" data-text="3" style="color: #f9f500;">3</span>
                     <span class="install__step--head2">Flash Rom</span>
                 </div>
                 <p class="install__step--des">
@@ -307,7 +320,7 @@
             </div>
             <div class="install__step">
                 <div class="install__step--head">
-                    <span class="install__step--head1" style="color: red;">4</span>
+                    <span class="install__step--head1 glitch" data-text="4" style="color: #f9f500;">4</span>
                     <span class="install__step--head2">Enjoy Rom :)</span>
                 </div>
                 <p class="install__step--des">
@@ -337,8 +350,8 @@
                         <div class="onemes__member db">
                             <div class="social-group">
                                 <i class="fab fa-telegram hero__social-icon social twitter"></i>
-                                <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
-                                <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
+                                <i class="fab fa-instagram hero__social-icon social instagram"></i>
+                                <i class="fab fa-facebook hero__social-icon social facebook"></i>
                             </div>
                             <img src="/img/team-1.png" alt="" class="onemes__member--photo">
                             <div class="onemes__member--deatils" >
@@ -349,8 +362,8 @@
                         <div class="onemes__member db">      
                             <div class="social-group">
                                 <i class="fab fa-telegram hero__social-icon social twitter"></i>
-                                <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
-                                <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
+                                <i class="fab fa-instagram hero__social-icon social instagram"></i>
+                                <i class="fab fa-facebook hero__social-icon social facebook"></i>
                             </div>  
                             <img src="/img/team-2.png" alt="" class="onemes__member--photo a">
                             <div class="onemes__member--deatils" >
@@ -361,8 +374,8 @@
                         <div class="onemes__member db">  
                             <div class="social-group">
                                 <i class="fab fa-telegram hero__social-icon social twitter"></i>
-                                <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
-                                <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
+                                <i class="fab fa-instagram hero__social-icon social instagram"></i>
+                                <i class="fab fa-facebook hero__social-icon social facebook"></i>
                             </div>         
                             <img src="/img/team-3.png" alt="" class="onemes__member--photo a">
                             <div class="onemes__member--deatils" >
@@ -381,8 +394,10 @@
                         <div class="onemes__member">
                             <div class="social-group">
                                 <i class="fab fa-telegram hero__social-icon social twitter"></i>
-                                <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
-                                <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
+                                <i class="fab fa-instagram hero__social-icon social instagram"></i>
+                                <i class="fab fa-facebook hero__social-icon social facebook"></i>
+                                <!-- <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
+                                <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook"> -->
                             </div>
                             <img src="/img/team-2.png" alt="" class="onemes__member--photo">
                             <div class="onemes__member--deatils">
@@ -393,8 +408,8 @@
                         <div class="onemes__member" >      
                             <div class="social-group">
                                 <i class="fab fa-telegram hero__social-icon social twitter"></i>
-                                <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
-                                <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
+                                <i class="fab fa-instagram hero__social-icon social instagram"></i>
+                                <i class="fab fa-facebook hero__social-icon social facebook"></i>
                             </div>  
                             <img src="/img/team-4.png" alt="" class="onemes__member--photo a">
                             <div class="onemes__member--deatils">
@@ -405,8 +420,8 @@
                         <div class="onemes__member" >  
                             <div class="social-group">
                                 <i class="fab fa-telegram hero__social-icon social twitter"></i>
-                                <img src="/img/Icon awesome-instagram.png" alt="" class="social instagram">
-                                <img src="/img/Icon awesome-facebook-f.png" alt="" class="social facebook">
+                                <i class="fab fa-instagram hero__social-icon social instagram"></i>
+                                <i class="fab fa-facebook hero__social-icon social facebook"></i>
                             </div>         
                             <img src="/img/team-5.png" alt="" class="onemes__member--photo a">
                             <div class="onemes__member--deatils">
@@ -468,12 +483,13 @@
 
     </footer>
 
+
     <!-- MARKUP FOR DOWNLOAD SECTION POPUP
     ================================================== -->
     <div class="popup" id="popup">
         <div class="popup__content">
             <div class="popup__head">
-                <h2 class="popup__heading" onclick="show()" id="download">OP7Pro Mclaren-Edition for MI A2</h2>
+                <h2 class="popup__heading" onclick="show()" id="download">OP7Pro Cyberpunk-Edition for MI A2</h2>
                 <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
             </div>
             <div class="popup__container" id="popup__container">
@@ -588,10 +604,125 @@
     <div class="popup" id="popup2">
         <div class="popup__content">
             <div class="popup__head">
-                <h2 class="popup__heading" onclick="show2()" id="download">OP7 Pro Port for MI A2</h2>
+                <h2 class="popup__heading" onclick="show2()" id="download">OP7Pro Mclaren-Edition for MI A2</h2>
                 <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
             </div>
             <div class="popup__container" id="popup__container2">
+                <div class="popup__left">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <p class="popup__left-title">OEM</p>
+                </div>
+                <div class="popup__right">Xiaomi India</div>
+                <div class="popup__left">
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <p class="popup__left-title">Device</p>
+                </div>
+                <div class="popup__right">Jasmine Sprout</div>
+                <div class="popup__left">
+                    <i class="fa fa-male" aria-hidden="true"></i>
+                    <p class="popup__left-title">Developer</p>
+                </div>
+                <div class="popup__right">hello_dont_panic</div>
+                <div class="popup__left">
+                    <i class="fa fa-id-card" aria-hidden="true"></i>
+                    <p class="popup__left-title">Android version</p>
+                </div>
+                <div class="popup__right">10.0.0</div>
+                <div class="popup__left">
+                    <i class="fa fa-lock" aria-hidden="true"></i>
+                    <p class="popup__left-title">Security Patch</p>
+                </div>
+                <div class="popup__right">October, 2020</div>
+                <div class="popup__left">
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    <p class="popup__left-title">Release Date</p>
+                </div>
+                <div class="popup__right">2020-11-12</div>
+                <div class="popup__left">
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                    <p class="popup__left-title">Zip size</p>
+                </div>
+                <div class="popup__right">1.90 GB</div>
+                <div class="popup__left">
+                    <i class="fa fa-bolt" aria-hidden="true"></i>
+                    <p class="popup__left-title ">No of Downloads</p>
+                </div>
+                <div class="popup__right">
+                    <div id="output">0</div>
+                </div>
+            </div>
+            <div class="popup__changelog" id="popup__changelog2">
+                <h2 class="mb_hg" >Changelogs :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li>Security patch (October,2020)</li>
+                    <label>2)</label>
+                    <li>McLaren Edition</li>
+                    <label>3)</label>
+                    <li>Added warp charging animation</li>
+                    <label>4)</label>
+                    <li>Added OOS 11 apps pre-installed</li>
+                    <label>5)</label>
+                    <li>Charging speed optimized (If getting low speed then change kernel to agni)</li>
+                    <label>6)</label>
+                    <li>Double Tap to wake forcefully enabled</li>
+                    <label>7)</label>
+                    <li>Added some custom fonts for fun with trial</li>
+                    <label>8)</label>
+                    <li>And many more TBH</li>
+                </ul>
+            </div>
+            <div class="popup__fixes" id="popup__fixes2">
+                <h2 class="mb_hg">Fixes :-</h2>
+                <ul>
+                    <label>1)</label>
+                    <li> For screen not turning complete off :
+                        <a href="https://imgur.com/FNVJw18" target="_blank">Watch this</a></li>
+                    <label>2)</label>
+                    <li>Hide magisk manager and apply fix from the group</li>
+                    <label>3)</label>
+                    <li>For apps detecting device as rooted:
+                        Hide those apps in Magisk Hide</li>
+                    <label>4)</label>
+                    <li>For USB File Transfer:
+                        Enable USB Debugging and select Default USB configuration as File Transfer in Developers Options</li>
+                </ul>
+            </div>
+            
+            <div class="popup__download">
+                <h2 class="popup__download-heading">Downloads</h2>
+                <div class="popup__flex">
+                    <a href="https://www.pling.com/p/1444673/" target="_blank" class="popup__d popup__d--new">Download
+                        latest Version</a>
+                    <a href="https://www.pling.com/p/1415532/"
+                        target="_blank" class="popup__d popup__d--old">Download Older Version</a>
+                </div>
+            </div>
+            <div class="popup__links">
+                <h2 class="popup__links-heading">Useful links</h2>
+                <div class="popup__grid">
+                    <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
+                        class="popup__link" style="background-color: green;">Donate</a>
+                    <a  class="popup__link popup__link--rotate"
+                        style="background-color: black" id="Changelog" onclick="hide2()">Changelog</a>
+                    <a href="https://www.pling.com/p/1444673/" target="_blank" class="popup__link"
+                        style="background-color: skyblue; color:black">ScreenShots</a>
+                  
+                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link popup__link--join"
+                        style="background-color: yellow; color: black;">Join us</a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup3">
+        <div class="popup__content">
+            <div class="popup__head">
+                <h2 class="popup__heading" onclick="show3()" id="download">OP7 Pro Port for MI A2</h2>
+                <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </div>
+            <div class="popup__container" id="popup__container3">
                 <div class="popup__left">
                     <i class="fa fa-mobile" aria-hidden="true"></i>
                     <p class="popup__left-title">OEM</p>
@@ -633,7 +764,7 @@
                 </div>
                 <div class="popup__right">Stable01</div>
             </div>
-            <div class="popup__changelog" id="popup__changelog2">
+            <div class="popup__changelog" id="popup__changelog3">
                 <h2 class="mb_hg" >Changelogs :-</h2>
                 <ul>
                     <label>1)</label>
@@ -685,119 +816,7 @@
                     <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
                         class="popup__link" style="background-color: green;">Donate</a>
                     <a  class="popup__link popup__link--rotate"
-                        style="background-color: black" id="Changelog" onclick="hide()">Changelog</a>
-                    <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
-                        style="background-color: skyblue; color:black">ScreenShots</a>
-                  
-                    <a href="https://t.me/Oxygenos_Mia2_Mi6x" target="_blank" class="popup__link popup__link--join"
-                        style="background-color: yellow; color: black;">Join us</a>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup" id="popup3">
-        <div class="popup__content">
-            <div class="popup__head">
-                <h2 class="popup__heading" onclick="show3()" id="download">OP7 Port for MI A2</h2>
-                <a href="#download" class="popup__close"><i class="fa fa-times" aria-hidden="true"></i></a>
-            </div>
-            <div class="popup__container" id="popup__container3">
-                <div class="popup__left">
-                    <i class="fa fa-mobile" aria-hidden="true"></i>
-                    <p class="popup__left-title">OEM</p>
-                </div>
-                <div class="popup__right">Xiaomi India</div>
-                <div class="popup__left">
-                    <i class="fa fa-code" aria-hidden="true"></i>
-                    <p class="popup__left-title">Device</p>
-                </div>
-                <div class="popup__right">Jasmine Sprout</div>
-                <div class="popup__left">
-                    <i class="fa fa-male" aria-hidden="true"></i>
-                    <p class="popup__left-title">Developer</p>
-                </div>
-                <div class="popup__right">hello_dont_panic</div>
-                <div class="popup__left">
-                    <i class="fa fa-id-card" aria-hidden="true"></i>
-                    <p class="popup__left-title">Android version</p>
-                </div>
-                <div class="popup__right">10.0.0</div>
-                <div class="popup__left">
-                    <i class="fa fa-lock" aria-hidden="true"></i>
-                    <p class="popup__left-title">Security Patch</p>
-                </div>
-                <div class="popup__right">July, 2020</div>
-                <div class="popup__left">
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <p class="popup__left-title">Release Date</p>
-                </div>
-                <div class="popup__right">2020-06-30</div>
-                <div class="popup__left">
-                    <i class="fa fa-envelope-open" aria-hidden="true"></i>
-                    <p class="popup__left-title">Zip size</p>
-                </div>
-                <div class="popup__right">1.45 GB</div>
-                <div class="popup__left">
-                    <i class="fa fa-bolt" aria-hidden="true"></i>
-                    <p class="popup__left-title ">Build Type</p>
-                </div>
-                <div class="popup__right">Stable01</div>
-            </div>
-            <div class="popup__changelog" id="popup__changelog3">
-                <h2 class="mb_hg" >Changelogs :-</h2>
-                <ul>
-                    <label>1)</label>
-                    <li>Initial Stable Build and TWRP Included</li>
-                    <label>2)</label>
-                    <li>Fixed Bluetooth and Wifi</li>
-                    <label>3)</label>
-                    <li>Social media video calling fixed</li>
-                    <label>4)</label>
-                    <li>Cam2api enabled</li>
-                    <label>5)</label>
-                    <li>All camera related stuff fixed</li>
-                    <label>6)</label>
-                    <li>Fixed Snapchat, Dt2w, WhatsApp video calling</li>
-                    <label>7)</label>
-                    <li>Face Unlock fixed</li>
-                    <label>8)</label>
-                    <li>And many more I don't remember</li>
-                </ul>
-            </div>
-            <div class="popup__fixes" id="popup__fixes">
-                <h2 class="mb_hg">Fixes :-</h2>
-                <ul>
-                    <label>1)</label>
-                    <li> For screen not turning complete off :
-                        <a href="https://imgur.com/FNVJw18" target="_blank">Watch this</a></li>
-                    <label>2)</label>
-                    <li>Hide magisk manager and apply fix from the group</li>
-                    <label>3)</label>
-                    <li>For apps detecting device as rooted:
-                        Hide those apps in Magisk Hide</li>
-                    <label>4)</label>
-                    <li>For USB File Transfer:
-                        Enable USB Debugging and select Default USB configuration as File Transfer in Developers Options</li>
-                </ul>
-            </div>
-            <div class="popup__download">
-                <h2 class="popup__download-heading">Downloads</h2>
-                <div class="popup__flex">
-                    <a href="https://sourceforge.net/projects/op7-oos10-mi-a2/files/OP7_Port/OP7_OOS10_JASMINE_SPROUT_20063005.zip/download" target="_blank" class="popup__d popup__d--new">Download
-                        latest Version</a>
-                    <a href="https://sourceforge.net/projects/mi-a2-oxygen-os/files/OP5_Port/"
-                        target="_blank" class="popup__d popup__d--old">Download Older Version</a>
-                </div>
-            </div>
-            <div class="popup__links">
-                <h2 class="popup__links-heading">Useful links</h2>
-                <div class="popup__grid">
-                    <a href="https://www.paypal.com/paypalme/hellodontpanic?locale.x=en_GB" target="_blank"
-                        class="popup__link" style="background-color: green;">Donate</a>
-                    <a  class="popup__link popup__link--rotate"
-                        style="background-color: black" id="Changelog" onclick="hide2()">Changelog</a>
+                        style="background-color: black" id="Changelog" onclick="hide3()">Changelog</a>
                     <a href="https://www.pling.com/p/1415532/" target="_blank" class="popup__link"
                         style="background-color: skyblue; color:black">ScreenShots</a>
                   
@@ -1178,9 +1197,9 @@
     });
     
     /*SCROLL HOME*/
-    sr.reveal('.hero__heading',{delay: 1000}); 
-    sr.reveal('.hero__sub',{delay: 1080}); 
-    sr.reveal('.hero__social-link',{delay: 1000, interval: 200});
+    sr.reveal('.hero__heading',{delay: 1000, origin: 'bottom'}); 
+    sr.reveal('.hero__sub',{delay: 1080, origin: 'bottom'}); 
+    sr.reveal('.hero__social-link',{delay: 1000, interval: 200, origin: 'bottom'});
 
     /*SCROLL PORT*/
     sr.reveal('.port__heading',{}); 
@@ -1425,6 +1444,28 @@
 
 
     </script>
+
+   
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/hmongouachon/mgGlitch/src/mgGlitch.min.js"></script>
+
+<script>
+    $(function(){
+$(".glitch-img").mgGlitch({
+destroy: false,
+glitch: true,
+scale: true,
+blend: true,
+blendModeType: 'hue',
+glitch1TimeMin: 200,
+glitch1TimeMax: 400,
+glitch2TimeMin: 10,
+glitch2TimeMax: 100,
+});
+});
+</script> -->
+
+   
     
    
 </body>
